@@ -9,6 +9,8 @@ git commit -m "Adicionar/Atualizar exercicios da aula"
 git push
 
 #escola
+# Antes de tudo ir no Google keep
+
 # Primeiro baixa todas as alterações do github
 git pull
 
@@ -16,3 +18,5 @@ git pull
 git add .
 git commit -m "atualização exercicios da escola"
 git push
+
+
