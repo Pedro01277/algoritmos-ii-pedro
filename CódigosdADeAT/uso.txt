@@ -17,6 +17,11 @@ git pull
 # Depois de terminar
 git add .
 git commit -m "atualização exercicios da escola"
-git push
+git push  -> Aqui ele pede login
 
+REGRA D OURO git push antes de sair
 
+#Segurança 
+Depois de dar push:
+logout do github no navegador
+Sign out no vs code 
