@@ -2,21 +2,18 @@
 
 int main()
 {
-    int N;
-    int m = 0, c = 0, d = 0, u = 0;
+    int numero;
+    int u, d, c, m;
+    printf("Digite um numero inteiro ate 4 digitos: ");
+    scanf("%d", &numero);
 
-    scanf("%d", &N);
-    m = N / 1000;
-    N = N - m * 1000;
-    c = N / 100;
-    N = N - c * 100;
-    d = N / 10;
-    N = N - d * 10;
-    u = N / 1;
-    N = N - u * 1;
+    u = numero % 10;
+    d = (numero / 10) % 10;
+    c = (numero / 100) % 10;
+    m = (numero / 1000) % 10;
 
-    printf("Milhar = %d", m);
-    printf("Centena = %d", c);
-    printf("Dezena = %d", d);
-    printf("unidade = %d", u);
+    printf("unidade = %d\n", u);
+     printf("dezena = %d\n", d);
+      printf("centena = %d\n", c);
+       printf("milhar= %d\n", m);
 }

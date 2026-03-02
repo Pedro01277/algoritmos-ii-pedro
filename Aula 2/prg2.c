@@ -2,33 +2,26 @@
 
 int main()
 {
-    int N1, N2, N3;
-    printf("Digite número um: ");
-    scanf("%d", &N1);
-    printf("Digite número dois: ");
-    scanf("%d", &N2);
-    printf("Digite número três: ");
-    scanf("%d", &N3);
-    int MR, MD, MN;
-    if (N2 < N1 && N3 < N1 || N1 < N2 && N3 < N2 || N1 < N3 && N2 < N3)
+    int N1, N2, N3, N4;
+    printf("Digite apenas três números:");
+    scanf("%d %d %d", &N1, &N2, &N3);
+    if (N1 < N2)
     {
-        MR = N1;
-        MR = N2;
-        MR = N3;
+        N4 = N1;
+        N1 = N2;
+        N2 = N4;
     }
-    else if (N2 < N1 && N3 < N2 || N3 < N2 && N1 < N3 || N1 < N3 && N2 < N1)
+    if (N1 < N3)
     {
-        MD = N2;
-        MD = N3;
-        MD = N1;
+        N4 = N1;
+        N1 = N3;
+        N3 = N4;
     }
-    else
+    if (N2 < N3)
     {
-        MN = N3;
-        MN = N1;
-        MN = N2;
+        N4 = N2;
+        N2 = N3;
+        N3 = N4;
     }
-    printf("MAIOR %d", MR);
-    printf("MEDIO %d", MD);
-    printf("MENOR %d", MN);
+    printf("Números do maior para menor %d %d %d", N1, N2, N3);
 }

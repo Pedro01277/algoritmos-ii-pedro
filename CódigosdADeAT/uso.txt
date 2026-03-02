@@ -1,0 +1,18 @@
+#CASA
+# Adicionar todos os arquivos novos ou alterados
+git add .
+
+# Salvar as alterações com uma mensagem curta
+git commit -m "Adicionar/Atualizar exercicios da aula"
+
+# enviar para o github
+git push
+
+#escola
+# Primeiro baixa todas as alterações do github
+git pull
+
+# Depois de terminar
+git add .
+git commit -m "atualização exercicios da escola"
+git push
